@@ -1,9 +1,3 @@
-/*
- * Title: Dynamic Memory Allocator 
- * Author: Christian Wills <cwills.dev@gmail.com>
- * License: GPLv2 (see COPYING)
- * File: malloc.c
- */
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>

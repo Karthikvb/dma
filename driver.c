@@ -1,9 +1,3 @@
-/*
- * Title: Dynamic Memory Allocator 
- * Author: Christian Wills <cwills.dev@gmail.com>
- * License: GPLv2 (see COPYING)
- * File: driver.c
- */
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,19 +11,6 @@
 int num_mallocs = 0;
 int num_frees = 0;
 
-/*
-void* malloc(size_t sz){
-    //void *(*libc_malloc)(size_t) = dlsym(RTLD_NEXT, "malloc");
-	num_mallocs++;
-    return my_malloc(sz);
-}
-
-void free(void *p){
-    //void (*libc_free)(void*) = dlsym(RTLD_NEXT, "free");
-    num_frees++;
-    my_free(p);
-}
-*/
 int main(void){
 	long heap_brk_before = (long) sbrk(0);
 	int i;
