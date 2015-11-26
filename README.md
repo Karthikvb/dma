@@ -48,27 +48,27 @@ This implementation of malloc() and free() is packaged as a
 shared library. Linking to this library overrides the malloc()
 and free() implementation in glibc.
 
-TODO
-----
-* Optimize malloc_chunk_t struct for size by incorporating the
-  'used' flag inside 'size' as a bit-field.  
-* Include other optional memory chunk re-use algorithms
-  besides 'worst fit'. 
-* Make properties such as byte alignment, minimum allocation
-  size tunable.
-* Write comprehensive test suite.
-* Set errno on allocation error to match the glibc API
 
-TESTING
--------
-The provided driver program will eventually be a comprehensive test
-suite but currently the best way to test this library is by forcing a
-known working binary to use it. This can be done by setting the
-LD_PRELOAD environment variable.  This library is newly thread safe so
-preloading should work with any binary. You can check what libraries a
-program is linked against with the ldd command.
 
-Example:`LD_PRELOAD=./libmymalloc.so /bin/vi`
 
-The above method has proved to be an effective form of
-testing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
